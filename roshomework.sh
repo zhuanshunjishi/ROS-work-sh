@@ -50,9 +50,9 @@ echo "————————————————————————�
    # 从https://gitee.com/dva7777/gazebo_models.git克隆Gazebo模型
    git clone https://gitee.com/dva7777/gazebo_models.git
    # 将克隆的gazebo_models文件夹重命名为models，并放到.gazebo文件夹下
-   mv ~/.gazebo/models/gazebo_models/* ~/.gazebo/models/
-   sudo rm -r ~/models/gazebo_models/
-
+   mv ~/.gazebo/gazebo_models/* ~/.gazebo/models/
+   sudo rm -r ~/.gazebo/gazebo_models/
+   
    cd ~
    source ./.bashrc 
 echo "—————————————————————————————————————————————"
