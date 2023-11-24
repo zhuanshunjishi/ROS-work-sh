@@ -48,13 +48,14 @@ mkdir -p ~/.gazebo/models/
    cd ~/.gazebo/
    # 安装Git工具
    sudo apt install git
+   sudo apt-get install git-lfs
    # 从https://gitee.com/dva7777/gazebo_models.git克隆Gazebo模型
+   cd ~
    git clone https://gitee.com/lilingkang123/gazebo_models.git
    # 将克隆的gazebo_models文件夹重命名为models，并放到.gazebo文件夹下
-   mv ~/.gazebo/gazebo_models/* ~/.gazebo/models/
-   sudo rm -r ~/.gazebo/gazebo_models/
+   mv ~/gazebo_models/* ~/.gazebo/models/
+   sudo rm -r ~/gazebo_models/
 
-   
    cd ~
    source ./.bashrc 
 echo "—————————————————————————————————————————————"
