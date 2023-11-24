@@ -44,14 +44,16 @@ echo "————————————————————————�
 echo "安装gazebo模型库"
 echo "—————————————————————————————————————————————"
 # 进入.gazebo文件夹，用于存放Gazebo模型和相关配置文件
+mkdir -p ~/.gazebo/models/
    cd ~/.gazebo/
    # 安装Git工具
    sudo apt install git
    # 从https://gitee.com/dva7777/gazebo_models.git克隆Gazebo模型
-   git clone https://gitee.com/dva7777/gazebo_models.git
+   git clone https://gitee.com/lilingkang123/gazebo_models.git
    # 将克隆的gazebo_models文件夹重命名为models，并放到.gazebo文件夹下
    mv ~/.gazebo/gazebo_models/* ~/.gazebo/models/
    sudo rm -r ~/.gazebo/gazebo_models/
+
    
    cd ~
    source ./.bashrc 
